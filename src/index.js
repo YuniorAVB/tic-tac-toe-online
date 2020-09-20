@@ -1,4 +1,4 @@
 const app = require('./server')
 require('./socket')
 
-app.listen(4000,()=>(console.log("running server")))
+app.listen(process.env.PORT || 4000,()=>(console.log("running server")))
